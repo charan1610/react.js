@@ -1,22 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import FunComponent from './Component/functioncomponent';
+import ClsComopnent from './Component/classcomoponent';
+import FunctionComponent from './Component/functioncomponent2';
+import ClassComponent from './Component/ClassComponent2';
+import ChangeState from './Component/classcomponent3';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <FunComponent/>
+        <ClsComopnent/>
+        <FunctionComponent name="charan"></FunctionComponent>
+        <ClassComponent/>
+        <ChangeState ></ChangeState>
       </header>
     </div>
   );
